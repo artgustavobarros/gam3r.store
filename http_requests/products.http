@@ -1,0 +1,44 @@
+GET http://localhost:3005/ping
+
+###
+GET http://localhost:3005/products
+
+###
+GET http://localhost:3005/products/20
+
+###
+DELETE http://localhost:3005/products/20
+
+###
+POST http://localhost:3005/products
+Content-Type: application/json
+
+{
+  "id": 20,
+  "name": "Monitor Gamer Samsung Odyssey G7 27\"",
+  "description": "O Samsung Odyssey G7 possui taxa de atualização de 240Hz e tempo de resposta de 1ms. Com painel curvo QHD e tecnologia G-Sync, é ideal para gamers que buscam desempenho e imersão.",
+  "brand": "Samsung",
+  "model": "LC27G75TQSNXZA",
+  "image": "https://firebasestorage.googleapis.com/v0/b/formacao-dev.appspot.com/o/lancamentos%2Fgam3rstore%2Fmonitor-gamer-samsung-led-27-odyssey-curvo.png?alt=media&token=98f062fb-4c3a-4e87-895d-61ecdd7f7609",
+  "score": 4.9,
+  "reviewVideo": "https://www.youtube.com/embed/-xrNbdySG-Y",
+  "tags": ["240Hz", "Curvo", "G-Sync"],
+  "basePrice": 3499.99,
+  "promotionalPrice": 2999.99,
+  "lowestPrice": 2799.99,
+  "biggestPrice": 3999.99,
+  "averagePrice": 3299.99,
+  "specifications": {
+    "stand": "Painel Curvo QHD",
+    "Tamanho": "27 polegadas",
+    "Taxa de Atualização": "240Hz",
+    "Tempo de Resposta": "1ms",
+    "Tecnologia": "QLED",
+    "Conectividade": "HDMI, DisplayPort, USB",
+    "peso": "6.5 kg"
+  }
+}
+
+###
+
+GET http://localhost:3005/orders

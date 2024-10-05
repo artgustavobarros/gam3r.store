@@ -1,0 +1,21 @@
+{
+    "name": "@gstore/core",
+    "version": "0.0.1",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsup src --dts --minify",
+        "dev": "tsup src --dts --watch",
+        "test": "jest --watchAll --collectCoverage"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tsup": "^8.2.4"
+    },
+    "dependencies": {
+        "tsup": "^8.3.0"
+    }
+}
